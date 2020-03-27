@@ -1,0 +1,6 @@
+/build
+/coverage
+/docs
+/vendor
+*.lock
+.phpunit.result.cache
