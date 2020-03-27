@@ -1,15 +1,22 @@
-# Very short description of the package
+# Core ☀️
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/nesiasoft/core.svg?style=flat-square)](https://packagist.org/packages/nesiasoft/core)
-[![Build Status](https://img.shields.io/travis/nesiasoft/core/master.svg?style=flat-square)](https://travis-ci.org/nesiasoft/core)
-[![Quality Score](https://img.shields.io/scrutinizer/g/nesiasoft/core.svg?style=flat-square)](https://scrutinizer-ci.com/g/nesiasoft/core)
-[![Total Downloads](https://img.shields.io/packagist/dt/nesiasoft/core.svg?style=flat-square)](https://packagist.org/packages/nesiasoft/core)
+|     | Status |
+| --- | --- |
+| Release | [![Latest Stable Version](https://poser.pugx.org/nesiasoft/core/v/stable)](https://packagist.org/packages/nesiasoft/core) [![Total Downloads](https://poser.pugx.org/nesiasoft/core/downloads)](https://packagist.org/packages/nesiasoft/core) [![License](https://poser.pugx.org/nesiasoft/core/license)](https://packagist.org/packages/nesiasoft/core) |
+| Code Quality | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nesiasoft/core/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nesiasoft/core/?branch=master) [![codecov](https://codecov.io/gh/nesiasoft/core/branch/master/graph/badge.svg)](https://codecov.io/gh/nesiasoft/core) [![Code Intelligence Status](https://scrutinizer-ci.com/g/nesiasoft/core/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence) |
+| Development | [![Build Status](https://travis-ci.org/nesiasoft/core.svg?branch=master)](https://travis-ci.org/nesiasoft/core) [![Maintainability](https://api.codeclimate.com/v1/badges/2d79eb5daabbf3fcc4d1/maintainability)](https://codeclimate.com/github/nesiasoft/core/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/2d79eb5daabbf3fcc4d1/test_coverage)](https://codeclimate.com/github/nesiasoft/core/test_coverage) |
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+---
+
+## Description
+
+Core of the Nesiasoft softwares.
+
+## Motivation
+
+blablabla
 
 ## Installation
-
-You can install the package via composer:
 
 ```bash
 composer require nesiasoft/core
@@ -17,37 +24,23 @@ composer require nesiasoft/core
 
 ## Usage
 
-``` php
-// Usage description here
+```bash
+$> under_development
 ```
 
-### Testing
+## Roadmap
 
-``` bash
-composer test
-```
+All planning goes to [Roadmap](ROADMAP.md) file.
 
-### Changelog
+## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/nesiasoft/core/issues)
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+1. Send PR
+1. Please do not take it personal if your PR got rejected
 
-## Contributing
+## Changelog
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-### Security
-
-If you discover any security related issues, please email rkukuh@gmail.com instead of using the issue tracker.
-
-## Credits
-
-- [R. Kukuh](https://github.com/nesiasoft)
-- [All Contributors](../../contributors)
+Notable changes are documented in [Changelog](CHANGELOG.md) file.
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
+The MIT License (MIT). Please see [License](LICENSE.md) file for more information.
