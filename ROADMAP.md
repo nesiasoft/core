@@ -1,5 +1,8 @@
-# ROADMAP
-
 ## Next Release
 
-- [ ] Under Development
+- [ ] One-to-One Polymorph: Description
+- [ ] One-to-One Polymorph: Note
+
+## Since v1.0.0
+
+- [x] Entity: Comment
