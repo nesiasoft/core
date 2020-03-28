@@ -15,7 +15,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     {
         parent::setUp();
 
-        $this->loadLaravelMigrations(['--database' => 'sqlite']);
+        $this->loadLaravelMigrations();
 
         $this->setUpDatabase();
         $this->createUser();
