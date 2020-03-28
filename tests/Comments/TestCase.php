@@ -8,7 +8,9 @@ use Nesiasoft\Core\Comments\CommentsServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
-
+    /**
+     * Setup the test environment.
+     */
     public function setUp(): void
     {
         parent::setUp();
@@ -26,24 +28,27 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
         ];
     }
 
+    /**
+     * Define environment setup.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return void
+     */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('auth.providers.users.model', User::class);
-
         $app['config']->set('database.default', 'sqlite');
+        $app['config']->set('auth.providers.users.model', User::class);
         
         $app['config']->set('database.connections.sqlite', [
             'driver' => 'sqlite',
             'database' => ':memory:',
             'prefix' => '',
         ]);
-        
-        $app['config']->set('app.key', 'base64:6Cu/ozj4gPtIjmXjr8EdVnGFNsdRqZfHfVjQkmTlg4Y=');
     }
 
     protected function setUpDatabase()
     {
-        include_once __DIR__ . '/../../database/migrations/create_comments_table.php.stub';
+        include_once(__DIR__ . '/../../database/migrations/create_comments_table.php.stub');
 
         (new \CreateCommentsTable())->up();
 
