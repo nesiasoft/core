@@ -143,6 +143,6 @@ class CommentsTest extends TestCase
         $this->assertCount(2, $post->comments);
         $this->assertCount(1, $post->comments()->approved()->get());
 
-        $this->assertSame('this comment is approved', $post->comments()->approved()->first()->comment);
+        $this->assertSame('this comment is approved', $post->comments()->approved()->first()->body);
     }
 }
