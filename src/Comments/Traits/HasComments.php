@@ -2,6 +2,7 @@
 
 namespace Nesiasoft\Core\Comments\Traits;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Nesiasoft\Core\Comments\Contracts\Commentator;
@@ -40,13 +41,19 @@ trait HasComments
     {
         $commentClass = config('comments.comment_class');
 
+        $approved_at = null;
+        if ($user instanceof Commentator) {
+            if (! $user->needsCommentApproval($this)) {
+                $approved_at = Carbon::now();
+            }
+        }
+
         $comment = new $commentClass([
             'commentable_id' => $this->getKey(),
             'commentable_type' => get_class(),
             'body' => $body,
             'user_id' => is_null($user) ? null : $user->getKey(),
-            'approved_at' => ($user instanceof Commentator) ? 
-                                ! $user->needsCommentApproval($this) : null,
+            'approved_at' => $approved_at,
         ]);
 
         return $this->comments()->save($comment);
