@@ -31,7 +31,7 @@ php artisan vendor:publish --provider="Nesiasoft\Core\Comments\CommentsServicePr
 php artisan migrate
 ```
 
-You may need to publish and modify `config/commenets.php` config file to your need:
+You may need to publish and modify `config/comments.php` config file to your need:
 
 ```bash
 php artisan vendor:publish --provider="Nesiasoft\Core\Comments\CommentsServiceProvider" --tag="config"
