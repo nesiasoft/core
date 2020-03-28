@@ -2,10 +2,9 @@
 
 namespace Nesiasoft\Core\Comments\Traits;
 
-
 use Illuminate\Database\Eloquent\Model;
-use Nesiasoft\Core\Contracts\Commentator;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Nesiasoft\Core\Comments\Contracts\Commentator;
 
 trait HasComments
 {

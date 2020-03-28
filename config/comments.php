@@ -2,5 +2,5 @@
 
 return [
     'user_model' => null,
-    'comment_class' => \Nesiasoft\Core\Comment::class,
+    'comment_class' => \Nesiasoft\Core\Comments\Models\Comment::class,
 ];
