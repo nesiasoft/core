@@ -2,9 +2,9 @@
 
 namespace Nesiasoft\Core\Tests\Comments;
 
+use Illuminate\Foundation\Auth\User;
 use Nesiasoft\Core\Tests\Comments\Models\ApprovedUser;
 use Nesiasoft\Core\Tests\Comments\Models\Post;
-use Illuminate\Foundation\Auth\User;
 
 class CommentsTest extends TestCase
 {
@@ -12,7 +12,7 @@ class CommentsTest extends TestCase
     public function users_without_commentator_interface_do_not_get_approved()
     {
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $post->comment('this is a comment');
@@ -26,7 +26,7 @@ class CommentsTest extends TestCase
     public function models_can_store_comments()
     {
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $post->comment('this is a comment');
@@ -42,7 +42,7 @@ class CommentsTest extends TestCase
     public function comments_without_users_have_no_relation()
     {
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $comment = $post->comment('this is a comment');
@@ -59,7 +59,7 @@ class CommentsTest extends TestCase
         auth()->login($user);
 
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $comment = $post->comment('this is a comment');
@@ -73,7 +73,7 @@ class CommentsTest extends TestCase
         $user = User::first();
 
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $comment = $post->commentAsUser($user, 'this is a comment');
@@ -87,7 +87,7 @@ class CommentsTest extends TestCase
         $user = User::first();
 
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $comment = $post->comment('this is a comment');
@@ -105,7 +105,7 @@ class CommentsTest extends TestCase
         $user = User::first();
 
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $comment = $post->comment('this is a comment');
@@ -120,7 +120,7 @@ class CommentsTest extends TestCase
         $user = ApprovedUser::first();
 
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $comment = $post->commentAsUser($user, 'this is a comment');
@@ -134,7 +134,7 @@ class CommentsTest extends TestCase
         $user = ApprovedUser::first();
 
         $post = Post::create([
-            'title' => 'Some post'
+            'title' => 'Some post',
         ]);
 
         $post->comment('this comment is not approved');

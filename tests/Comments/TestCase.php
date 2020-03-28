@@ -2,8 +2,8 @@
 
 namespace Nesiasoft\Core\Tests\Comments;
 
-use Illuminate\Foundation\Auth\User;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Foundation\Auth\User;
 use Nesiasoft\Core\Comments\CommentsServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
@@ -38,7 +38,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     {
         $app['config']->set('database.default', 'sqlite');
         $app['config']->set('auth.providers.users.model', User::class);
-        
+
         $app['config']->set('database.connections.sqlite', [
             'driver' => 'sqlite',
             'database' => ':memory:',
@@ -48,7 +48,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
 
     protected function setUpDatabase()
     {
-        include_once(__DIR__ . '/../../database/migrations/create_comments_table.php.stub');
+        include_once __DIR__.'/../../database/migrations/create_comments_table.php.stub';
 
         (new \CreateCommentsTable())->up();
 
@@ -64,8 +64,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
         User::forceCreate([
             'name' => 'User',
             'email' => 'user@email.com',
-            'password' => 'test'
+            'password' => 'test',
         ]);
     }
-
 }

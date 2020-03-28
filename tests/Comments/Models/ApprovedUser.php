@@ -7,7 +7,6 @@ use Nesiasoft\Core\Comments\Contracts\Commentator;
 
 class ApprovedUser extends User implements Commentator
 {
-
     protected $table = 'users';
 
     /**
@@ -19,5 +18,4 @@ class ApprovedUser extends User implements Commentator
     {
         return false;
     }
-
 }
