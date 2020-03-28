@@ -12,20 +12,33 @@
 
 Core of the Nesiasoft softwares.
 
-## Motivation
-
-blablabla
+This will install these following entity: **Comment**
 
 ## Installation
+
+This package can be installed via composer:
 
 ```bash
 composer require nesiasoft/core
 ```
 
-## Usage
+The package will automatically register a service provider.
+
+You need to publish and run the migration:
 
 ```bash
-$> under_development
+php artisan vendor:publish --provider="Nesiasoft\Core\Comments\CommentsServiceProvider" --tag="migrations"
+php artisan migrate
+```
+
+## Usage
+
+blablabla
+
+### Testing
+
+```bash
+composer test
 ```
 
 ## Roadmap
