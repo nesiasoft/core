@@ -34,8 +34,8 @@ class CommentsTest extends TestCase
 
         $this->assertCount(2, $post->comments);
 
-        $this->assertSame('this is a comment', $post->comments[0]->comment);
-        $this->assertSame('this is a different comment', $post->comments[1]->comment);
+        $this->assertSame('this is a comment', $post->comments[0]->body);
+        $this->assertSame('this is a different comment', $post->comments[1]->body);
     }
 
     /** @test */
