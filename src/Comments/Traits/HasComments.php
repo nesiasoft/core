@@ -58,5 +58,4 @@ trait HasComments
 
         return $this->comments()->save($comment);
     }
-
 }

@@ -2,8 +2,8 @@
 
 namespace Nesiasoft\Core\Tests\Comments\Models;
 
-use Nesiasoft\Core\Comments\Traits\HasComments;
 use Illuminate\Database\Eloquent\Model;
+use Nesiasoft\Core\Comments\Traits\HasComments;
 
 class Post extends Model
 {

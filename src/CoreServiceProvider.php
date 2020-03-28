@@ -12,11 +12,9 @@ class CoreServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-
             $this->publishes([
                 __DIR__.'/../config/core.php' => config_path('core.php'),
             ], 'config');
-            
         }
     }
 

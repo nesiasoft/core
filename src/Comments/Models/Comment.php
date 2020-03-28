@@ -59,7 +59,6 @@ class Comment extends Model
         return $this->belongsTo($this->getAuthModelName(), 'user_id');
     }
 
-
     /****************************************** METHOD *******************************************/
 
     public function approve()
@@ -94,5 +93,4 @@ class Comment extends Model
 
         throw new Exception('Could not determine the commentator model name.');
     }
-
 }
