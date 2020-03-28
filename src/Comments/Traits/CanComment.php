@@ -2,7 +2,6 @@
 
 namespace Nesiasoft\Core\Comments\Traits;
 
-
 trait CanComment
 {
     /**

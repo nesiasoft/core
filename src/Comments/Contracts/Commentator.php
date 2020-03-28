@@ -2,7 +2,6 @@
 
 namespace Nesiasoft\Core\Comments\Contracts;
 
-
 interface Commentator
 {
     /**
