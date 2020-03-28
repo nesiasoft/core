@@ -1,6 +1,6 @@
 <?php
 
-namespace Nesiasoft\Core\Traits;
+namespace Nesiasoft\Core\Comments\Traits;
 
 
 use Illuminate\Database\Eloquent\Model;

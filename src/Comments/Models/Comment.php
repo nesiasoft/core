@@ -1,6 +1,6 @@
 <?php
 
-namespace Nesiasoft\Core;
+namespace Nesiasoft\Core\Comments\Models;
 
 use Carbon\Carbon;
 use Exception;

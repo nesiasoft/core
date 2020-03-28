@@ -1,6 +1,6 @@
 <?php
 
-namespace Nesiasoft\Core\Contracts;
+namespace Nesiasoft\Core\Comments\Contracts;
 
 
 interface Commentator

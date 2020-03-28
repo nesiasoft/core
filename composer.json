@@ -48,10 +48,12 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nesiasoft\\Core\\CoreServiceProvider"
+                "Nesiasoft\\Core\\CoreServiceProvider",
+                "Nesiasoft\\Core\\Comments\\CommentsServiceProvider"
             ],
             "aliases": {
-                "Core": "Nesiasoft\\Core\\CoreFacade"
+                "Core": "Nesiasoft\\Core\\CoreFacade",
+                "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade"
             }
         }
     }
