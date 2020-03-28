@@ -22,10 +22,6 @@ class Comment extends Model
         'approved_at',
     ];
 
-    protected $casts = [
-        'approved_at' => 'boolean',
-    ];
-
     /******************************************* SCOPE *******************************************/
 
     /**
