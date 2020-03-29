@@ -11,7 +11,7 @@ class Email extends Model
     use HasEmails;
 
     protected $fillable = [
-        'body',
+        'address',
     ];
 
     /*************************************** RELATIONSHIP ****************************************/
