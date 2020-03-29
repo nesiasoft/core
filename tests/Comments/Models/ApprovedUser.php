@@ -2,8 +2,8 @@
 
 namespace Nesiasoft\Core\Tests\Comments\Models;
 
-use Illuminate\Foundation\Auth\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User;
 use Nesiasoft\Core\Comments\Contracts\Commentator;
 
 class ApprovedUser extends User implements Commentator

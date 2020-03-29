@@ -55,10 +55,9 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
                 ->connection()
                 ->getSchemaBuilder()
                 ->create('products', function (Blueprint $table) {
-
-            $table->increments('id');
-            $table->string('name');
-            $table->timestamps();
-        });
+                    $table->increments('id');
+                    $table->string('name');
+                    $table->timestamps();
+                });
     }
 }
