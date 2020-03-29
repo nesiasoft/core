@@ -56,18 +56,19 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
             ->connection()
             ->getSchemaBuilder()
             ->create('posts', function (Blueprint $table) {
-                $table->increments('id');
-                $table->string('title');
-                $table->timestamps();
-            });
+
+            $table->increments('id');
+            $table->string('title');
+            $table->timestamps();
+        });
     }
 
     protected function createUser()
     {
         User::forceCreate([
-            'name' => 'User',
-            'email' => 'user@email.com',
-            'password' => 'test',
+            'name' => 'User 01',
+            'email' => 'user01@example.com',
+            'password' => 'p4ssw0rd',
         ]);
     }
 }
