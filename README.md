@@ -33,6 +33,7 @@ You need to publish and run the migration:
 ```bash
 php artisan vendor:publish --provider="Nesiasoft\Core\Comments\CommentsServiceProvider" --tag="migrations"
 php artisan vendor:publish --provider="Nesiasoft\Core\Descriptions\DescriptionsServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Nesiasoft\Core\Emails\EmailsServiceProvider" --tag="migrations"
 php artisan vendor:publish --provider="Nesiasoft\Core\Notes\NotesServiceProvider" --tag="migrations"
 php artisan migrate
 ```
@@ -42,6 +43,7 @@ You may want to publish and modify config files to your need:
 ```bash
 php artisan vendor:publish --provider="Nesiasoft\Core\Comments\CommentsServiceProvider" --tag="config"
 php artisan vendor:publish --provider="Nesiasoft\Core\Descriptions\DescriptionsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Nesiasoft\Core\Emails\EmailsServiceProvider" --tag="config"
 php artisan vendor:publish --provider="Nesiasoft\Core\Notes\NotesServiceProvider" --tag="config"
 ```
 

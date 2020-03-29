@@ -2,7 +2,6 @@
 
 ## Next Release
 
-- [ ] Entity: Email
 - [ ] Entity: Fax
 - [ ] Entity: Phone
 - [ ] Entity: URL
@@ -17,4 +16,5 @@
 
 - [x] Entity: Comment
 - [x] Entity: Description
+- [x] Entity: Email
 - [x] Entity: Note
