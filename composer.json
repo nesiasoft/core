@@ -50,12 +50,14 @@
             "providers": [
                 "Nesiasoft\\Core\\CoreServiceProvider",
                 "Nesiasoft\\Core\\Comments\\CommentsServiceProvider",
-                "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider"
+                "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider",
+                "Nesiasoft\\Core\\Notes\\NotesServiceProvider"
             ],
             "aliases": {
                 "Core": "Nesiasoft\\Core\\CoreFacade",
                 "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade",
-                "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade"
+                "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade",
+                "Notes": "Nesiasoft\\Core\\Notes\\NotesFacade"
             }
         }
     }
