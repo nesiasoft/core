@@ -4,11 +4,11 @@ namespace Nesiasoft\Core\Emails\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Nesiasoft\Core\Emails\Traits\HasEmail;
+use Nesiasoft\Core\Emails\Traits\HasEmails;
 
 class Email extends Model
 {
-    use HasEmail;
+    use HasEmails;
 
     protected $fillable = [
         'body',
