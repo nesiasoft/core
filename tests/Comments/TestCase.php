@@ -52,7 +52,11 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
 
         (new \CreateCommentsTable())->up();
 
-        $this->app['db']->connection()->getSchemaBuilder()->create('posts', function (Blueprint $table) {
+        $this->app['db']
+            ->connection()
+            ->getSchemaBuilder()
+            ->create('posts', function (Blueprint $table) {
+                
             $table->increments('id');
             $table->string('title');
             $table->timestamps();
