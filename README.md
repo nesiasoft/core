@@ -3,8 +3,8 @@
 |     | Status |
 | --- | --- |
 | Release | [![Latest Stable Version](https://poser.pugx.org/nesiasoft/core/v/stable)](https://packagist.org/packages/nesiasoft/core) [![Total Downloads](https://poser.pugx.org/nesiasoft/core/downloads)](https://packagist.org/packages/nesiasoft/core) [![License](https://poser.pugx.org/nesiasoft/core/license)](https://packagist.org/packages/nesiasoft/core) |
-| Code Quality | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nesiasoft/core/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nesiasoft/core/?branch=master) [![codecov](https://codecov.io/gh/nesiasoft/core/branch/master/graph/badge.svg)](https://codecov.io/gh/nesiasoft/core) [![CircleCI](https://circleci.com/gh/nesiasoft/core.svg?style=shield)](https://circleci.com/gh/nesiasoft/core) |
-| Development | [![Build Status](https://travis-ci.org/nesiasoft/core.svg?branch=master)](https://travis-ci.org/nesiasoft/core) [![Maintainability](https://api.codeclimate.com/v1/badges/2d79eb5daabbf3fcc4d1/maintainability)](https://codeclimate.com/github/nesiasoft/core/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/2d79eb5daabbf3fcc4d1/test_coverage)](https://codeclimate.com/github/nesiasoft/core/test_coverage) |
+| Code Quality | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nesiasoft/core/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nesiasoft/core/?branch=master) [![codecov](https://codecov.io/gh/nesiasoft/core/branch/master/graph/badge.svg)](https://codecov.io/gh/nesiasoft/core) [![Maintainability](https://api.codeclimate.com/v1/badges/2d79eb5daabbf3fcc4d1/maintainability)](https://codeclimate.com/github/nesiasoft/core/maintainability) |
+| Development | [![Build Status](https://travis-ci.org/nesiasoft/core.svg?branch=master)](https://travis-ci.org/nesiasoft/core) [![CircleCI](https://circleci.com/gh/nesiasoft/core.svg?style=shield)](https://circleci.com/gh/nesiasoft/core) [![Test Coverage](https://api.codeclimate.com/v1/badges/2d79eb5daabbf3fcc4d1/test_coverage)](https://codeclimate.com/github/nesiasoft/core/test_coverage) |
 
 ---
 
