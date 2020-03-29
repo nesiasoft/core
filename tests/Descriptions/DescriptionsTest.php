@@ -14,7 +14,7 @@ class DescriptionsTest extends TestCase
         ]);
 
         $product->description()->create([
-            'body' => 'this is a description'
+            'body' => 'this is a description',
         ]);
 
         $this->assertSame('this is a description', $product->description->body);
