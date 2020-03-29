@@ -28,17 +28,5 @@ jobs:
             - ./vendor
 
       - run:
-          name: "Create Environment file and generate app key"
-          command: |
-            mv .env.testing .env
-            php artisan key:generate
-      
-      - run:
-          name: "Create database and run migration"
-          command: |
-            touch database/database.sqlite
-            php artisan migrate:fresh --env=testing
-
-      - run:
-          name: "Run test suite"
+          name: "Run Test Suite"
           command: ./vendor/bin/phpunit
