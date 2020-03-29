@@ -6,6 +6,8 @@ use Carbon\Carbon;
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Nesiasoft\Core\Comments\Traits\HasComments;
 
 class Comment extends Model
@@ -41,7 +43,7 @@ class Comment extends Model
      * One-to-Many Polymorph: An entity can have zero or many comments.
      * This function will get all of the owning commentable models.
      *
-     * @return mixed
+     * @return MorphTo
      */
     public function commentable()
     {
@@ -49,10 +51,10 @@ class Comment extends Model
     }
 
     /**
-     * One-to-Many: A comment must have a commentator.
+     * A comment must have a commentator.
      * This function will retrieve the commenttor of a given comment.
      *
-     * @return mixed
+     * @return BelongsTo
      */
     public function commentator()
     {
@@ -73,7 +75,7 @@ class Comment extends Model
     public function disapprove()
     {
         $this->update([
-            'approved' => null,
+            'approved_at' => null,
         ]);
 
         return $this;
