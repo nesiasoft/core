@@ -16,7 +16,8 @@ This will install these following entity:
 
 1. Comment
 2. Description
-3. Note
+3. Email
+4. Note
 
 ## Installation
 
