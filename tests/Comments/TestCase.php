@@ -56,11 +56,10 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
             ->connection()
             ->getSchemaBuilder()
             ->create('posts', function (Blueprint $table) {
-                
-            $table->increments('id');
-            $table->string('title');
-            $table->timestamps();
-        });
+                $table->increments('id');
+                $table->string('title');
+                $table->timestamps();
+            });
     }
 
     protected function createUser()
