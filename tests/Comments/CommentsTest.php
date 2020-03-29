@@ -9,7 +9,7 @@ use Nesiasoft\Core\Tests\Comments\Models\Post;
 class CommentsTest extends TestCase
 {
     /** @test */
-    public function users_without_commentator_interface_do_not_get_approved()
+    public function user_without_commentator_interface_do_not_get_approved()
     {
         $post = Post::create([
             'title' => 'Some post',
@@ -23,7 +23,7 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function models_can_store_comments()
+    public function model_can_store_comments()
     {
         $post = Post::create([
             'title' => 'Some post',
@@ -39,7 +39,7 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function comments_without_users_have_no_relation()
+    public function comment_without_user_has_no_relation()
     {
         $post = Post::create([
             'title' => 'Some post',
@@ -52,7 +52,7 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function comments_can_be_posted_as_authenticated_users()
+    public function comment_can_be_posted_as_authenticated_user()
     {
         $user = User::first();
 
@@ -68,7 +68,7 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function comments_can_be_posted_as_different_users()
+    public function comment_can_be_posted_as_different_user()
     {
         $user = User::first();
 
@@ -82,10 +82,8 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function comments_can_be_approved()
+    public function comment_can_be_approved()
     {
-        $user = User::first();
-
         $post = Post::create([
             'title' => 'Some post',
         ]);
@@ -100,10 +98,8 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function comments_resolve_the_commented_model()
+    public function comment_resolves_the_commented_model()
     {
-        $user = User::first();
-
         $post = Post::create([
             'title' => 'Some post',
         ]);
@@ -115,7 +111,7 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function users_can_be_auto_approved()
+    public function user_can_be_auto_approved()
     {
         $user = ApprovedUser::first();
 
@@ -129,7 +125,7 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
-    public function comments_have_an_approved_scope()
+    public function comment_has_an_approved_scope()
     {
         $user = ApprovedUser::first();
 
