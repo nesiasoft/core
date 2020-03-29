@@ -49,11 +49,13 @@
         "laravel": {
             "providers": [
                 "Nesiasoft\\Core\\CoreServiceProvider",
-                "Nesiasoft\\Core\\Comments\\CommentsServiceProvider"
+                "Nesiasoft\\Core\\Comments\\CommentsServiceProvider",
+                "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider"
             ],
             "aliases": {
                 "Core": "Nesiasoft\\Core\\CoreFacade",
-                "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade"
+                "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade",
+                "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade"
             }
         }
     }
