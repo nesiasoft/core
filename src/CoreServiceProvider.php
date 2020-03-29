@@ -3,6 +3,7 @@
 namespace Nesiasoft\Core;
 
 use Illuminate\Support\ServiceProvider;
+use Nesiasoft\Core\Console\Commands\PublishCoreFiles;
 
 class CoreServiceProvider extends ServiceProvider
 {
@@ -12,9 +13,15 @@ class CoreServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
+
+            $this->commands([
+                PublishCoreFiles::class
+            ]);
+
             $this->publishes([
                 __DIR__.'/../config/core.php' => config_path('core.php'),
             ], 'config');
+
         }
     }
 
