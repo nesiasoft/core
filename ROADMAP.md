@@ -2,10 +2,10 @@
 
 ## Next Release
 
-- [ ] Entity: Description
 - [ ] Entity: Note
 - [ ] Entity: Comment: Threaded
 
-### Since v1.0.0
+### Since v1.1.0
 
 - [x] Entity: Comment
+- [x] Entity: Description
