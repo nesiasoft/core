@@ -98,6 +98,22 @@ class CommentsTest extends TestCase
     }
 
     /** @test */
+    public function comment_can_be_disapproved()
+    {
+        $user = ApprovedUser::first();
+
+        $post = Post::create([
+            'title' => 'Some post',
+        ]);
+
+        $comment = $post->commentAsUser($user, 'this is a comment');
+
+        $comment->disapprove();
+
+        $this->assertNull($comment->approved_at);
+    }
+
+    /** @test */
     public function comment_resolves_the_commented_model()
     {
         $post = Post::create([
