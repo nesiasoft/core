@@ -53,7 +53,8 @@
                 "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider",
                 "Nesiasoft\\Core\\Emails\\EmailsServiceProvider",
                 "Nesiasoft\\Core\\Faxes\\FaxesServiceProvider",
-                "Nesiasoft\\Core\\Notes\\NotesServiceProvider"
+                "Nesiasoft\\Core\\Notes\\NotesServiceProvider",
+                "Nesiasoft\\Core\\Phones\\PhonesServiceProvider"
             ],
             "aliases": {
                 "Core": "Nesiasoft\\Core\\CoreFacade",
@@ -61,7 +62,8 @@
                 "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade",
                 "Emails": "Nesiasoft\\Core\\Emails\\EmailsFacade",
                 "Faxes": "Nesiasoft\\Core\\Faxes\\FaxesFacade",
-                "Notes": "Nesiasoft\\Core\\Notes\\NotesFacade"
+                "Notes": "Nesiasoft\\Core\\Notes\\NotesFacade",
+                "Phones": "Nesiasoft\\Core\\Phones\\PhonesFacade"
             }
         }
     }
