@@ -11,7 +11,7 @@ class Fax extends Model
     use HasFaxes;
 
     protected $fillable = [
-        'address',
+        'number',
     ];
 
     /*************************************** RELATIONSHIP ****************************************/
