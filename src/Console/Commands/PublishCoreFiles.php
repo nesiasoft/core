@@ -40,6 +40,7 @@ class PublishCoreFiles extends Command
         $this->publishCommentsFiles();
         $this->publishDescriptionsFiles();
         $this->publishEmailsFiles();
+        $this->publishFaxesFiles();
         $this->publishNotesFiles();
     }
 
@@ -94,6 +95,24 @@ class PublishCoreFiles extends Command
         $this->call('vendor:publish', [
             '--tag'      => 'config',
             '--provider' => "Nesiasoft\Core\Emails\EmailsServiceProvider",
+        ]);
+    }
+
+    /**
+     * Publish vendor files for entity: Fax.
+     *
+     * @return void
+     */
+    protected function publishFaxesFiles(): void
+    {
+        $this->call('vendor:publish', [
+            '--tag'      => 'migrations',
+            '--provider' => "Nesiasoft\Core\Faxes\FaxesServiceProvider",
+        ]);
+
+        $this->call('vendor:publish', [
+            '--tag'      => 'config',
+            '--provider' => "Nesiasoft\Core\Faxes\FaxesServiceProvider",
         ]);
     }
 
