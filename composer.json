@@ -52,6 +52,7 @@
                 "Nesiasoft\\Core\\Comments\\CommentsServiceProvider",
                 "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider",
                 "Nesiasoft\\Core\\Emails\\EmailsServiceProvider",
+                "Nesiasoft\\Core\\Faxes\\FaxesServiceProvider",
                 "Nesiasoft\\Core\\Notes\\NotesServiceProvider"
             ],
             "aliases": {
@@ -59,6 +60,7 @@
                 "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade",
                 "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade",
                 "Emails": "Nesiasoft\\Core\\Emails\\EmailsFacade",
+                "Faxes": "Nesiasoft\\Core\\Faxes\\FaxesFacade",
                 "Notes": "Nesiasoft\\Core\\Notes\\NotesFacade"
             }
         }
