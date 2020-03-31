@@ -8,7 +8,7 @@
 - [ ] Entity: Comment: threaded
 - [ ] Type of: Email, Fax, Phone, Address, Bookmark
 
-### Since v1.1.0
+### Since v1.7.0
 
 - [x] Entity: Bookmark
 - [x] Entity: Comment
