@@ -42,6 +42,7 @@ class PublishCoreFiles extends Command
         $this->publishEmailsFiles();
         $this->publishFaxesFiles();
         $this->publishNotesFiles();
+        $this->publishPhonesFiles();
     }
 
     /**
@@ -131,6 +132,24 @@ class PublishCoreFiles extends Command
         $this->call('vendor:publish', [
             '--tag'      => 'config',
             '--provider' => "Nesiasoft\Core\Notes\NotesServiceProvider",
+        ]);
+    }
+
+    /**
+     * Publish vendor files for entity: Phone.
+     *
+     * @return void
+     */
+    protected function publishPhonesFiles(): void
+    {
+        $this->call('vendor:publish', [
+            '--tag'      => 'migrations',
+            '--provider' => "Nesiasoft\Core\Phones\PhonesServiceProvider",
+        ]);
+
+        $this->call('vendor:publish', [
+            '--tag'      => 'config',
+            '--provider' => "Nesiasoft\Core\Phones\PhonesServiceProvider",
         ]);
     }
 }
