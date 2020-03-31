@@ -10,6 +10,8 @@ class URL extends Model
 {
     use HasURLs;
 
+    protected $table = "urls";
+
     protected $fillable = [
         'path',
     ];
