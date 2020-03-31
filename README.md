@@ -20,6 +20,7 @@ This will install these following entity:
 4. Fax
 5. Note
 6. Phone
+7. URL
 
 ## Installation
 
