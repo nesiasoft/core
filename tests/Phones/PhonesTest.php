@@ -4,7 +4,7 @@ namespace Nesiasoft\Core\Tests\Phones;
 
 use Nesiasoft\Core\Tests\Phones\Models\Supplier;
 
-class Phones extends TestCase
+class PhonesTest extends TestCase
 {
     /** @test */
     public function model_can_store_phones()
