@@ -11,7 +11,7 @@ class Phone extends Model
     use HasPhones;
 
     protected $fillable = [
-        'address',
+        'number',
     ];
 
     /*************************************** RELATIONSHIP ****************************************/

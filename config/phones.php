@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'email_class' => \Nesiasoft\Core\Emails\Models\Email::class,
+    'phone_class' => \Nesiasoft\Core\Phones\Models\Phone::class,
 ];
