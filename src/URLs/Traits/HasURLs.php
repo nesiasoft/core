@@ -11,7 +11,7 @@ trait HasURLs
      *
      * @return MorphMany
      */
-    public function url()
+    public function urls()
     {
         return $this->MorphMany(config('urls.url_class'), 'urlable');
     }
