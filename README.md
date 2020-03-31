@@ -19,6 +19,7 @@ This will install these following entity:
 3. Email
 4. Fax
 5. Note
+6. Phone
 
 ## Installation
 

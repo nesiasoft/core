@@ -2,7 +2,6 @@
 
 ## Next Release
 
-- [ ] Entity: Phone
 - [ ] Entity: URL
 - [ ] Entity: Bookmark
 - [ ] Entity: Approval
@@ -18,4 +17,5 @@
 - [x] Entity: Email
 - [x] Entity: Fax
 - [x] Entity: Note
+- [x] Entity: Phone
 - [x] Command to publish all config files and migrations
