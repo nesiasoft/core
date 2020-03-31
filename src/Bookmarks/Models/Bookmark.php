@@ -11,7 +11,7 @@ class Bookmark extends Model
     use HasBookmarks;
 
     protected $fillable = [
-        'address',
+        'permalink',
     ];
 
     /*************************************** RELATIONSHIP ****************************************/
