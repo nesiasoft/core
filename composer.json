@@ -49,6 +49,7 @@
         "laravel": {
             "providers": [
                 "Nesiasoft\\Core\\CoreServiceProvider",
+                "Nesiasoft\\Core\\Approvals\\ApprovalsServiceProvider",
                 "Nesiasoft\\Core\\Bookmarks\\BookmarksServiceProvider",
                 "Nesiasoft\\Core\\Comments\\CommentsServiceProvider",
                 "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider",
@@ -60,6 +61,7 @@
             ],
             "aliases": {
                 "Core": "Nesiasoft\\Core\\CoreFacade",
+                "Approvals": "Nesiasoft\\Core\\Approvals\\ApprovalsFacade",
                 "Bookmarks": "Nesiasoft\\Core\\Bookmarks\\BookmarksFacade",
                 "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade",
                 "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade",

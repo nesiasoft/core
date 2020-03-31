@@ -1,0 +1,48 @@
+<?php
+
+namespace Nesiasoft\Core\Approvals\Traits;
+
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Nesiasoft\Core\Approvals\Contracts\Approver;
+
+trait HasApprovals
+{
+    /**
+     * Return all approvals for this model.
+     *
+     * @return MorphMany
+     */
+    public function approvals()
+    {
+        return $this->morphMany(config('approvals.comment_class'), 'approvable');
+    }
+
+    /**
+     * Attach a approve to this model as a specific user.
+     *
+     * @param Model|null $user
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function approveAsUser(?Model $user)
+    {
+        $approvalClass = config('approves.approve_class');
+
+        $approved_at = null;
+        if ($user instanceof Approver) {
+            if (! $user->approvalNeedsPermission($this)) {
+                $approved_at = Carbon::now();
+            }
+        }
+
+        $approval = new $approvalClass([
+            'approvable_id' => $this->getKey(),
+            'approvable_type' => get_class(),
+            'approved_by' => is_null($user) ? null : $user->getKey(),
+            'approved_at' => $approved_at,
+        ]);
+
+        return $this->approvals()->save($approval);
+    }
+}
