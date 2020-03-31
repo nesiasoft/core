@@ -37,6 +37,7 @@ class PublishCoreFiles extends Command
      */
     public function handle()
     {
+        $this->publishBookmarksFiles();
         $this->publishCommentsFiles();
         $this->publishDescriptionsFiles();
         $this->publishEmailsFiles();
@@ -44,6 +45,24 @@ class PublishCoreFiles extends Command
         $this->publishNotesFiles();
         $this->publishPhonesFiles();
         $this->publishURLsFiles();
+    }
+
+    /**
+     * Publish vendor files for entity: Bookmark.
+     *
+     * @return void
+     */
+    protected function publishBookmarksFiles(): void
+    {
+        $this->call('vendor:publish', [
+            '--tag'      => 'migrations',
+            '--provider' => "Nesiasoft\Core\Bookmarks\BookmarksServiceProvider",
+        ]);
+
+        $this->call('vendor:publish', [
+            '--tag'      => 'config',
+            '--provider' => "Nesiasoft\Core\Bookmarks\BookmarksServiceProvider",
+        ]);
     }
 
     /**
