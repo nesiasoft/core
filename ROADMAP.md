@@ -6,6 +6,7 @@
 - [ ] Entity: Acronym
 - [ ] Entity: Address
 - [ ] Entity: Comment: threaded
+- [ ] Status of: Approval
 - [ ] Type of: Email, Fax, Phone, Address, Bookmark
 
 ### Since v1.7.0
