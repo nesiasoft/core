@@ -2,7 +2,6 @@
 
 ## Next Release
 
-- [ ] Entity: Bookmark
 - [ ] Entity: Approval
 - [ ] Entity: Acronym
 - [ ] Entity: Address
@@ -11,6 +10,7 @@
 
 ### Since v1.1.0
 
+- [x] Entity: Bookmark
 - [x] Entity: Comment
 - [x] Entity: Description
 - [x] Entity: Email

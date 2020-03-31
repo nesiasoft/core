@@ -14,13 +14,14 @@ Core of the Nesiasoft softwares.
 
 This will install these following entity:
 
-1. Comment
-2. Description
-3. Email
-4. Fax
-5. Note
-6. Phone
-7. URL
+1. Bookmark
+2. Comment
+3. Description
+4. Email
+5. Fax
+6. Note
+7. Phone
+8. URL
 
 ## Installation
 
