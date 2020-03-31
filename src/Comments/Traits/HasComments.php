@@ -43,7 +43,7 @@ trait HasComments
 
         $approved_at = null;
         if ($user instanceof Commentator) {
-            if (! $user->needsCommentApproval($this)) {
+            if (! $user->needsCommentApproval($user)) {
                 $approved_at = Carbon::now();
             }
         }
