@@ -31,7 +31,7 @@ trait HasApprovals
 
         $approved_at = null;
         if ($user instanceof Approver) {
-            if (! $user->approvalNeedsPermission($this)) {
+            if (! $user->approvalNeedsPermission($user)) {
                 $approved_at = Carbon::now();
             }
         }
