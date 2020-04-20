@@ -98,19 +98,6 @@ class ApprovalsTest extends TestCase
     }
 
     /** @test */
-    public function approve_resolves_the_approved_model()
-    {
-        $document = Document::create([
-            'number' => 'DOC-001',
-        ]);
-
-        $approval = $document->approve();
-
-        $this->assertSame($approval->approveable->id, $document->id);
-        $this->assertSame($approval->approveable->number, $document->number);
-    }
-
-    /** @test */
     public function user_can_be_auto_approved()
     {
         $user = Approver::first();
