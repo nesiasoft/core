@@ -26,7 +26,7 @@ class Approval extends Model
     /******************************************* SCOPE *******************************************/
 
     /**
-     * Scope a query to only include approved comment.
+     * Scope a query to only include approved approval.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
@@ -92,6 +92,6 @@ class Approval extends Model
             return config('auth.providers.users.model');
         }
 
-        throw new Exception('Could not determine the commentator model name.');
+        throw new Exception('Could not determine the approver model name.');
     }
 }
