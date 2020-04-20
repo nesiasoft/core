@@ -16,7 +16,18 @@ trait HasApprovals
      */
     public function approvals()
     {
-        return $this->morphMany(config('approvals.comment_class'), 'approvable');
+        return $this->morphMany(config('approvals.approval_class'), 'approvable');
+    }
+
+    /**
+     * Attach an approval to this model.
+     *
+     * @param string $approval
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function approve()
+    {
+        return $this->approveAsUser(auth()->user());
     }
 
     /**
@@ -27,7 +38,7 @@ trait HasApprovals
      */
     public function approveAsUser(?Model $user)
     {
-        $approvalClass = config('approves.approve_class');
+        $approvalClass = config('approvals.approval_class');
 
         $approved_at = null;
         if ($user instanceof Approver) {
@@ -39,7 +50,7 @@ trait HasApprovals
         $approval = new $approvalClass([
             'approvable_id' => $this->getKey(),
             'approvable_type' => get_class(),
-            'approved_by' => is_null($user) ? null : $user->getKey(),
+            'user_id' => is_null($user) ? null : $user->getKey(),
             'approved_at' => $approved_at,
         ]);
 
