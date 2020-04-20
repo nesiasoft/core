@@ -15,7 +15,7 @@ class Approval extends Model
     use HasApprovals;
 
     protected $fillable = [
-        'approved_by',
+        'user_id',
         'approved_at',
     ];
 
@@ -57,7 +57,7 @@ class Approval extends Model
      */
     public function approver()
     {
-        return $this->belongsTo($this->getAuthModelName(), 'approved_by');
+        return $this->belongsTo($this->getAuthModelName(), 'user_id');
     }
 
     /****************************************** METHOD *******************************************/
