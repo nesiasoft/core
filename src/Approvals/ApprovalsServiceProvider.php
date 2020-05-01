@@ -4,7 +4,7 @@ namespace Nesiasoft\Core\Approvals;
 
 use Illuminate\Support\ServiceProvider;
 
-class CommentsServiceProvider extends ServiceProvider
+class ApprovalsServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
