@@ -2,6 +2,12 @@
 
 All notable changes will be documented in this file.
 
+## [v1.8.0 (2020-05-01)](https://github.com/nesiasoft/core/compare/v1.7.0...v1.8.0)
+
+**Added**
+
+- Entity: Approval
+
 ## [v1.7.0 (2020-03-29)](https://github.com/nesiasoft/core/compare/v1.6.0...v1.7.0)
 
 **Added**

@@ -2,15 +2,15 @@
 
 ## Next Release
 
-- [ ] Entity: Approval
 - [ ] Entity: Acronym
 - [ ] Entity: Address
 - [ ] Entity: Comment: threaded
 - [ ] Status of: Approval
-- [ ] Type of: Email, Fax, Phone, Address, Bookmark
+- [ ] Type of: Bookmark, Email, Fax, Phone, Address
 
 ### Since v1.7.0
 
+- [x] Entity: Approval
 - [x] Entity: Bookmark
 - [x] Entity: Comment
 - [x] Entity: Description
