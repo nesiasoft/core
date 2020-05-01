@@ -25,7 +25,7 @@ trait HasApprovals
      * @param Model $user
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function approveByUser(Model $user)
+    public function approveBy(Model $user)
     {
         $approvalClass = config('approvals.approval_class');
 

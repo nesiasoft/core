@@ -22,7 +22,7 @@ class ApprovalsTest extends TestCase
     }
 
     /** @test */
-    public function approval_can_be_posted_as_different_user()
+    public function model_can_not_be_approved_by_user_who_are_not_approver()
     {
         $user = User::first();
 
@@ -30,43 +30,13 @@ class ApprovalsTest extends TestCase
             'number' => 'DOC-001',
         ]);
 
-        $approval = $document->approveByUser($user);
-
-        $this->assertSame($user->toArray(), $approval->approver->toArray());
-    }
-
-    /** @test */
-    public function model_can_be_approved()
-    {
-        $user = Approver::first();
-
-        $document = Document::create([
-            'number' => 'DOC-001',
-        ]);
-
-        $approval = $document->approveByUser($user);
-
-        $this->assertNotNull($approval->approved_at);
-    }
-
-    /** @test */
-    public function mdoel_can_be_disapproved()
-    {
-        $user = Approver::first();
-
-        $document = Document::create([
-            'number' => 'DOC-001',
-        ]);
-
-        $approval = $document->approveByUser($user);
-
-        $approval->disapprove();
+        $approval = $document->approveBy($user);
 
         $this->assertNull($approval->approved_at);
     }
 
     /** @test */
-    public function user_can_be_auto_approved()
+    public function model_can_be_approved_by_approver()
     {
         $user = Approver::first();
 
@@ -74,9 +44,25 @@ class ApprovalsTest extends TestCase
             'number' => 'DOC-001',
         ]);
 
-        $approval = $document->approveByUser($user);
+        $approval = $document->approveBy($user);
 
         $this->assertNotNull($approval->approved_at);
+    }
+
+    /** @test */
+    public function mdoel_can_be_disapproved_by_approver()
+    {
+        $user = Approver::first();
+
+        $document = Document::create([
+            'number' => 'DOC-001',
+        ]);
+
+        $approval = $document->approveBy($user);
+
+        $approval->disapprove();
+
+        $this->assertNull($approval->approved_at);
     }
 
     /** @test */
@@ -88,8 +74,8 @@ class ApprovalsTest extends TestCase
             'number' => 'DOC-001',
         ]);
 
-        $document->approveByUser($user);
-        $document->approveByUser($user);
+        $document->approveBy($user);
+        $document->approveBy($user);
 
         $this->assertCount(2, $document->approvals);
         $this->assertCount(2, $document->approvals()->approved()->get());
