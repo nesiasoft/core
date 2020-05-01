@@ -20,23 +20,12 @@ trait HasApprovals
     }
 
     /**
-     * Attach an approval to this model.
-     *
-     * @param string $approval
-     * @return \Illuminate\Database\Eloquent\Model
-     */
-    public function approve()
-    {
-        return $this->approveAsUser(auth()->user());
-    }
-
-    /**
      * Attach a approve to this model as a specific user.
      *
-     * @param Model|null $user
+     * @param Model $user
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function approveAsUser(?Model $user)
+    public function approveByUser(Model $user)
     {
         $approvalClass = config('approvals.approval_class');
 
