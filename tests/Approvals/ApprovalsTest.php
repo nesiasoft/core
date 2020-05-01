@@ -15,8 +15,8 @@ class ApprovalsTest extends TestCase
             'number' => 'DOC-001',
         ]);
 
-        $document->approvals()->create(['user_id' => 1]);
-        $document->approvals()->create(['user_id' => 2]);
+        $document->approvals()->create(['approved_by' => 1]);
+        $document->approvals()->create(['approved_by' => 2]);
 
         $this->assertCount(2, $document->approvals);
     }

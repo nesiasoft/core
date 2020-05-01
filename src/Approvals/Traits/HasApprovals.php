@@ -39,7 +39,7 @@ trait HasApprovals
         $approval = new $approvalClass([
             'approvable_id' => $this->getKey(),
             'approvable_type' => get_class(),
-            'user_id' => is_null($user) ? null : $user->getKey(),
+            'approved_by' => is_null($user) ? null : $user->getKey(),
             'approved_at' => $approved_at,
         ]);
 
