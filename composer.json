@@ -49,25 +49,29 @@
         "laravel": {
             "providers": [
                 "Nesiasoft\\Core\\CoreServiceProvider",
+                
+                "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider",
+                "Nesiasoft\\Core\\Notes\\NotesServiceProvider",
+                
                 "Nesiasoft\\Core\\Approvals\\ApprovalsServiceProvider",
                 "Nesiasoft\\Core\\Bookmarks\\BookmarksServiceProvider",
                 "Nesiasoft\\Core\\Comments\\CommentsServiceProvider",
-                "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider",
                 "Nesiasoft\\Core\\Emails\\EmailsServiceProvider",
                 "Nesiasoft\\Core\\Faxes\\FaxesServiceProvider",
-                "Nesiasoft\\Core\\Notes\\NotesServiceProvider",
                 "Nesiasoft\\Core\\Phones\\PhonesServiceProvider",
                 "Nesiasoft\\Core\\URLs\\URLsServiceProvider"
             ],
             "aliases": {
                 "Core": "Nesiasoft\\Core\\CoreFacade",
+                
+                "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade",
+                "Notes": "Nesiasoft\\Core\\Notes\\NotesFacade",
+                
                 "Approvals": "Nesiasoft\\Core\\Approvals\\ApprovalsFacade",
                 "Bookmarks": "Nesiasoft\\Core\\Bookmarks\\BookmarksFacade",
                 "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade",
-                "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade",
                 "Emails": "Nesiasoft\\Core\\Emails\\EmailsFacade",
                 "Faxes": "Nesiasoft\\Core\\Faxes\\FaxesFacade",
-                "Notes": "Nesiasoft\\Core\\Notes\\NotesFacade",
                 "Phones": "Nesiasoft\\Core\\Phones\\PhonesFacade",
                 "URLs": "Nesiasoft\\Core\\URLs\\URLsFacade"
             }
