@@ -12,14 +12,14 @@
 
 Core of the Nesiasoft softwares.
 
-This will install these following entity:
+This package will install these following entities:
 
-### 1-to-1 polymorph entities
+### One-to-One polymorph entities
 
 1. Description
 1. Note
 
-### 1-to-M polymorph entities
+### One-to-Many polymorph entities
 
 1. Approval
 1. Bookmark
