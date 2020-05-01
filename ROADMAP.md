@@ -7,6 +7,7 @@
 - [ ] Entity: Comment: threaded
 - [ ] Status of: Approval
 - [ ] Type of: Bookmark, Email, Fax, Phone, Address
+- [ ] Nested test: Approval of Comment
 
 ### Since v1.7.0
 
