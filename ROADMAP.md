@@ -2,7 +2,6 @@
 
 ## Next Release
 
-- [ ] Entity: Acronym
 - [ ] Entity: Address
 - [ ] Entity: Progreess
 - [ ] Entity: Comment: threaded
@@ -10,8 +9,9 @@
 - [ ] Status of: Approval, Progress
 - [ ] Type of: Bookmark, Email, Fax, Phone, Document, Address
 
-### Since v1.9.0
+### Since v1.10.0
 
+- [x] Entity: Acronym
 - [x] Entity: Approval
 - [x] Entity: Bookmark
 - [x] Entity: Comment

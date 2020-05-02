@@ -53,6 +53,7 @@
                 "Nesiasoft\\Core\\Descriptions\\DescriptionsServiceProvider",
                 "Nesiasoft\\Core\\Notes\\NotesServiceProvider",
                 
+                "Nesiasoft\\Core\\Acronyms\\AcronymsServiceProvider",
                 "Nesiasoft\\Core\\Approvals\\ApprovalsServiceProvider",
                 "Nesiasoft\\Core\\Bookmarks\\BookmarksServiceProvider",
                 "Nesiasoft\\Core\\Comments\\CommentsServiceProvider",
@@ -68,6 +69,7 @@
                 "Descriptions": "Nesiasoft\\Core\\Descriptions\\DescriptionsFacade",
                 "Notes": "Nesiasoft\\Core\\Notes\\NotesFacade",
                 
+                "Acronyms": "Nesiasoft\\Core\\Acronyms\\AcronymsFacade",
                 "Approvals": "Nesiasoft\\Core\\Approvals\\ApprovalsFacade",
                 "Bookmarks": "Nesiasoft\\Core\\Bookmarks\\BookmarksFacade",
                 "Comments": "Nesiasoft\\Core\\Comments\\CommentsFacade",

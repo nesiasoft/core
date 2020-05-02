@@ -21,6 +21,7 @@ This package will install these following entities:
 
 ### One-to-Many polymorph entities
 
+1. Acronym
 1. Approval
 1. Bookmark
 1. Comment
