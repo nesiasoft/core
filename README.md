@@ -50,8 +50,7 @@ php artisan migrate
 
 ## Usage
 
-blablabla  
-wasweswos
+This package has no direct use but to become foundation for Nesiasoft softwares.
 
 ### Testing
 
