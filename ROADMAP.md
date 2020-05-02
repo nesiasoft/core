@@ -2,11 +2,12 @@
 
 ## Next Release
 
+- [ ] Entity: Document
 - [ ] Entity: Acronym
 - [ ] Entity: Address
 - [ ] Entity: Comment: threaded
 - [ ] Status of: Approval
-- [ ] Type of: Bookmark, Email, Fax, Phone, Address
+- [ ] Type of: Bookmark, Email, Fax, Phone, Document, Address
 - [ ] Nested test: Approval of Comment
 
 ### Since v1.7.0

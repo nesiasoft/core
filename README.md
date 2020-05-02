@@ -24,6 +24,7 @@ This package will install these following entities:
 1. Approval
 1. Bookmark
 1. Comment
+1. Document
 1. Email
 1. Fax
 1. Phone
