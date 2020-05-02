@@ -4,10 +4,11 @@
 
 - [ ] Entity: Acronym
 - [ ] Entity: Address
+- [ ] Entity: Progreess
 - [ ] Entity: Comment: threaded
-- [ ] Status of: Approval
-- [ ] Type of: Bookmark, Email, Fax, Phone, Document, Address
 - [ ] Nested test: Approval of Comment
+- [ ] Status of: Approval, Progress
+- [ ] Type of: Bookmark, Email, Fax, Phone, Document, Address
 
 ### Since v1.9.0
 
